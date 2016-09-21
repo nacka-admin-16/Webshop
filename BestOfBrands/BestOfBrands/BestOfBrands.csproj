@@ -122,6 +122,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="images\slideshow-ralphlauren.png" />
+    <Content Include="images\slideshow-burberry.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -131,6 +134,16 @@
     <Content Include="Pages\Admin\AddProduct.cshtml" />
     <Content Include="Pages\Admin\AdminMaster.cshtml" />
     <Content Include="Pages\Admin\SaveProduct.cshtml" />
+    <Content Include="UI\css\bootstrap-theme.css.map" />
+    <Content Include="UI\css\bootstrap-theme.min.css.map" />
+    <Content Include="UI\css\bootstrap.css.map" />
+    <Content Include="UI\css\bootstrap.min.css.map" />
+    <Content Include="UI\css\Carousel.css" />
+    <Content Include="UI\css\ie10-viewport-bug-workaround.css" />
+    <Content Include="UI\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="UI\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="UI\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="UI\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -141,6 +154,22 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="styles\general.css" />
+    <Content Include="UI\css\bootstrap-theme.css" />
+    <Content Include="UI\css\bootstrap-theme.min.css" />
+    <Content Include="UI\css\bootstrap.css" />
+    <Content Include="UI\css\bootstrap.min.css" />
+    <Content Include="UI\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="UI\js\bootstrap.js" />
+    <Content Include="UI\js\bootstrap.min.js" />
+    <Content Include="UI\js\holder.min.js" />
+    <Content Include="UI\js\html5shiv.min.js" />
+    <Content Include="UI\js\ie-emulation-modes-warning.js" />
+    <Content Include="UI\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="UI\js\ie8-responsive-file-warning.js" />
+    <Content Include="UI\js\jquery.1.12.4.min.js" />
+    <Content Include="UI\js\npm.js" />
+    <Content Include="UI\js\respond.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

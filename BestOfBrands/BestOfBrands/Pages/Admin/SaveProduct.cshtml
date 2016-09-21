@@ -7,7 +7,7 @@
     string price = Request.QueryString["price"];
     var message = string.Empty;
 
-    var products = new List<Product>();
+    //var products = new List<Product>();
     
     try
     {
@@ -25,4 +25,8 @@
 <h1>Spara produkt</h1>
 
 <p>@message</p>
+<p>Produkten skapad:</p>
+<p>@name</p>
+<p>@description</p>
+<p>@price</p>
 
