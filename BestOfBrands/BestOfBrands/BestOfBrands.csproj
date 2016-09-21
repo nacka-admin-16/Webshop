@@ -128,6 +128,9 @@
     </Content>
     <Content Include="Pages\Master.cshtml" />
     <Content Include="Default.cshtml" />
+    <Content Include="Pages\Admin\AddProduct.cshtml" />
+    <Content Include="Pages\Admin\AdminMaster.cshtml" />
+    <Content Include="Pages\Admin\SaveProduct.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

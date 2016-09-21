@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "AdminMaster.cshtml";
+}
+
+<h1>Skapa produkt</h1>
+
+<form action="SaveProduct.cshtml">
+    <p>
+        <label>Namn</label>
+        <input type="text" name="name"/>
+    </p>
+    <p>
+        <label>Beskrivning</label>
+        <textarea name="description" cols="40" rows="5"></textarea>
+    </p>
+    <p>
+        <label>Pris</label>
+        <input type="text" name="price"/>
+    </p>
+    <p><input type="submit" value="Skapa produkt"/></p>
+</form>
