@@ -1,4 +1,4 @@
-﻿namespace BestOfBrands.Abstractions.Entitites
+﻿namespace BestOfBrands.Entitites
 {
     public class Product
     {

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Products>
+  <Product>
+    <Name>Burberrytröja</Name>
+    <Description>En grön tröja</Description>
+    <Price>1299</Price>
+  </Product>
+  <Product>
+    <Name>Burberrytröja</Name>
+    <Description>En grön tröja</Description>
+    <Price>1299</Price>
+  </Product>
+  <Product>
+    <Name>Burberrytröja</Name>
+    <Description>En brun tröja</Description>
+    <Price>1299</Price>
+  </Product>
+  <Product>
+    <Name>Burberrytröja</Name>
+    <Description>En brun tröja</Description>
+    <Price>11199</Price>
+  </Product>
+  <Product>
+    <Name>oiupoiuop</Name>
+    <Description>jjlköjölkjölkjö</Description>
+    <Price>882</Price>
+  </Product>
+  <Product>
+    <Name>Blå piké</Name>
+    <Description>En mysig pikétröja från Brothers.</Description>
+    <Price>399</Price>
+  </Product>
+  <Product>
+    <Name>Skjorta</Name>
+    <Description>En gul skjorta med knappar.</Description>
+    <Price>0</Price>
+  </Product>
+</Products>

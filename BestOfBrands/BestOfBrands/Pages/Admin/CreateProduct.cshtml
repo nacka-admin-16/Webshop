@@ -1,0 +1,60 @@
+﻿@using BestOfBrands.Abstractions
+@using BestOfBrands.Abstractions.Interfaces
+@using BestOfBrands.Configuration
+@using BestOfBrands.Entitites
+
+@{
+    Layout = "AdminMaster.cshtml";
+    var message = string.Empty;
+
+    if (IsPost)
+    {
+        var name = Request.Form["name"];
+        var description = Request.Form["description"];
+        var price = Request.Form["price"];
+        
+        //todo validate client and server side
+        var product = new Product
+        {
+            Name = name,
+            Description = description,
+            Price = Convert.ToDouble(price)
+        };
+
+        IProductRepository productRepository = new ProductRepository();
+
+        if (productRepository.CreateProduct(product))
+        {
+            message = "Produkten skapad";
+        }
+        else
+        {
+            message = "Tekniskt fel var god läs loggen/n" + SiteConstants.PathToExceptionLog();
+        }
+    }
+}
+
+<h1>Skapa produkt</h1>
+
+<form action="CreateProduct.cshtml" method="POST">
+    <p>
+        <label>Namn</label>
+        <input type="text" name="name"/>
+    </p>
+    <p>
+        <label>Beskrivning</label>
+        <textarea name="description" cols="40" rows="5"></textarea>
+    </p>
+    <p>
+        <label>Pris</label>
+        <input type="text" name="price"/>
+    </p>
+    <p>
+        <input type="submit" value="Skapa produkt"/>
+    </p>
+</form>
+
+@if (IsPost)
+{
+    <h2>@message</h2>
+}

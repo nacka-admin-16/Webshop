@@ -122,23 +122,25 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Database\products.xml" />
     <Content Include="favicon.ico" />
-    <Content Include="images\slideshow-ralphlauren.png" />
-    <Content Include="images\slideshow-burberry.jpg" />
+    <Content Include="Images\slideshow-ralphlauren.png" />
+    <Content Include="Images\slideshow-burberry.jpg" />
+    <Content Include="Logs\exceptionlog.txt" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Pages\Master.cshtml" />
     <Content Include="Default.cshtml" />
-    <Content Include="Pages\Admin\AddProduct.cshtml" />
+    <Content Include="Pages\Admin\CreateProduct.cshtml" />
     <Content Include="Pages\Admin\AdminMaster.cshtml" />
-    <Content Include="Pages\Admin\SaveProduct.cshtml" />
     <Content Include="UI\css\bootstrap-theme.css.map" />
     <Content Include="UI\css\bootstrap-theme.min.css.map" />
     <Content Include="UI\css\bootstrap.css.map" />
     <Content Include="UI\css\bootstrap.min.css.map" />
     <Content Include="UI\css\Carousel.css" />
+    <Content Include="UI\css\general.css" />
     <Content Include="UI\css\ie10-viewport-bug-workaround.css" />
     <Content Include="UI\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="UI\fonts\glyphicons-halflings-regular.ttf" />
@@ -152,7 +154,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="styles\general.css" />
     <Content Include="UI\css\bootstrap-theme.css" />
     <Content Include="UI\css\bootstrap-theme.min.css" />
     <Content Include="UI\css\bootstrap.css" />
@@ -171,11 +172,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstractions\Entitites\Product.cs" />
+    <Compile Include="Configuration\SiteConstants.cs" />
+    <Compile Include="Entitites\Product.cs" />
     <Compile Include="Abstractions\Interfaces\IProductRepository.cs" />
     <Compile Include="Abstractions\ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

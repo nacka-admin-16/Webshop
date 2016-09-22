@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
-using BestOfBrands.Abstractions.Entitites;
+﻿using BestOfBrands.Entitites;
 
 namespace BestOfBrands.Abstractions.Interfaces
 {
     public interface IProductRepository
     {
-        List<Product> GetAllProducts();
-
-        List<Product> GetAllShirts();
+        bool CreateProduct(Product product);
     }
 }
