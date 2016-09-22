@@ -146,6 +146,7 @@
     <Content Include="UI\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="UI\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="UI\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Pages\Admin\ListProducts.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

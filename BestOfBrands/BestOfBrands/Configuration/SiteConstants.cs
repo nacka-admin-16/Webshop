@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace BestOfBrands.Configuration
+﻿namespace BestOfBrands.Configuration
 {
     public class SiteConstants
     {

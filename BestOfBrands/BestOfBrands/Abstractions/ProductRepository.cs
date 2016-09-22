@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Xml.Linq;
 using BestOfBrands.Abstractions.Interfaces;
 using BestOfBrands.Configuration;
@@ -54,6 +56,45 @@ namespace BestOfBrands.Abstractions
 
                 return false;
             }
+        }
+
+        public List<Product> GetProducts()
+        {
+            try
+            {
+                var products = new List<Product>();
+                var document = XDocument.Load(SiteConstants.PathToProductsXml());
+                var elements = from i in document.Descendants("Product")
+                               select new
+                               {
+                                    Name = i.Element("Name").Value,
+                                    Description = i.Element("Description").Value,
+                                    Price = i.Element("Price").Value
+                               };
+
+                foreach (var product in elements)
+                {
+                    var p = new Product
+                    {
+                        Name = product.Name,
+                        Description = product.Description,
+                        Price = Convert.ToDouble(product.Price)
+                    };
+
+                    products.Add(p);
+                }
+
+                return products;
+            }
+            catch (Exception exception)
+            {
+                using (var streamWriter = new StreamWriter(SiteConstants.PathToExceptionLog(), true))
+                {
+                    streamWriter.WriteLine(DateTime.Now + " " + exception.Message);
+                }
+
+                return new List<Product>();
+            }            
         }
     }
 }

@@ -1,0 +1,20 @@
+﻿@using BestOfBrands.Abstractions
+@using BestOfBrands.Abstractions.Interfaces
+@using BestOfBrands.Configuration
+@using BestOfBrands.Entitites
+
+@{
+    Layout = "AdminMaster.cshtml";
+    
+    IProductRepository productRepository = new ProductRepository();
+    var products = productRepository.GetProducts();
+
+}
+
+<h1>Lista produkter</h1>
+
+@foreach (var product in products)
+{
+    <p><span>@product.Name</span></p>
+    <p><span>@product.Description</span></p>
+}

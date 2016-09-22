@@ -35,4 +35,14 @@
     <Description>En gul skjorta med knappar.</Description>
     <Price>0</Price>
   </Product>
+  <Product>
+    <Name>Skjorta</Name>
+    <Description>En gul skjorta med knappar.</Description>
+    <Price>72772</Price>
+  </Product>
+  <Product>
+    <Name>Skjorta</Name>
+    <Description>En gul skjorta med knappar.</Description>
+    <Price>72772</Price>
+  </Product>
 </Products>
