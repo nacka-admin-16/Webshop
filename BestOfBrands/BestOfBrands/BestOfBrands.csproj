@@ -147,6 +147,8 @@
     <Content Include="UI\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="UI\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Pages\Admin\ListProducts.cshtml" />
+    <Content Include="Pages\Men.cshtml" />
+    <Content Include="Pages\Women.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -168,6 +170,7 @@
     <Content Include="UI\js\ie10-viewport-bug-workaround.js" />
     <Content Include="UI\js\ie8-responsive-file-warning.js" />
     <Content Include="UI\js\jquery.1.12.4.min.js" />
+    <Content Include="UI\js\menu.js" />
     <Content Include="UI\js\npm.js" />
     <Content Include="UI\js\respond.min.js" />
     <Content Include="Web.config" />
