@@ -12,7 +12,18 @@
         var name = Request.Form["name"];
         var description = Request.Form["description"];
         var price = Request.Form["price"];
+        var file = Request.Files["image"];
         
+        if (file != null && file.ContentLength > 0)
+        {
+            var fname = Path.GetFileName(file.FileName);
+
+            if (fname != null)
+            {
+                file.SaveAs(Server.MapPath(Path.Combine("~/images/products/", fname)));
+            }
+        }
+
         //todo validate on client and server side
         var product = new Product
         {
@@ -36,7 +47,7 @@
 
 <h1>Skapa produkt</h1>
 
-<form action="CreateProduct.cshtml" method="POST">
+<form action="CreateProduct.cshtml" method="POST" enctype="multipart/form-data">
     <p>
         <label>Namn</label>
         <input type="text" name="name"/>
@@ -51,6 +62,9 @@
     </p>
     <p>
         <input type="submit" value="Skapa produkt"/>
+    </p>
+    <p>
+        <input type="file" name="image"/>
     </p>
 </form>
 

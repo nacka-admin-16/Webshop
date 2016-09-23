@@ -124,15 +124,17 @@
   <ItemGroup>
     <Content Include="Database\products.xml" />
     <Content Include="favicon.ico" />
-    <Content Include="Images\slideshow-ralphlauren.png" />
-    <Content Include="Images\slideshow-burberry.jpg" />
+    <Content Include="images\cart.png" />
+    <Content Include="images\slideshow-morris.jpg" />
+    <Content Include="images\slideshow-burberry.jpg" />
+    <Content Include="images\slideshow-ralph.jpg" />
     <Content Include="Logs\exceptionlog.txt" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Pages\Master.cshtml" />
-    <Content Include="Default.cshtml" />
+    <Content Include="Index.cshtml" />
     <Content Include="Pages\Admin\CreateProduct.cshtml" />
     <Content Include="Pages\Admin\AdminMaster.cshtml" />
     <Content Include="UI\css\bootstrap-theme.css.map" />
@@ -182,7 +184,9 @@
     <Compile Include="Abstractions\ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="images\products\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -1,3 +1,31 @@
 ﻿input, label {
     display: block;
 }
+
+.numberCircle {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 20px;
+    padding: 4px;
+    font-size: 12px;
+    line-height: 1em;
+    border: 2px solid red;
+    position: relative;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+   
+}
+.numberCircle .height_fix {
+    margin-top: 100%;
+}
+.numberCircle .content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: -6px; /* Note, this must be half the font size */
+}
