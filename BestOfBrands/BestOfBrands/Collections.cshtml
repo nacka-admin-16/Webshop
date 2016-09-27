@@ -1,0 +1,30 @@
+﻿@using BestOfBrands.Examples
+
+@{
+    Layout = null;
+
+    IListExample list = new ListExample();
+    var products = list.GetProducts(); 
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @foreach (var item in products)
+        {
+            <p>@item.Name</p>
+            <p>@item.Description</p>
+            <p>@item.Price</p>
+            <hr/>
+        }
+
+        <span>Total price: @list.GetTotalPrice()</span>
+    </div>
+</body>
+</html>

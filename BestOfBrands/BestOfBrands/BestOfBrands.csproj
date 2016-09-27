@@ -151,6 +151,7 @@
     <Content Include="Pages\Admin\ListProducts.cshtml" />
     <Content Include="Pages\Men.cshtml" />
     <Content Include="Pages\Women.cshtml" />
+    <Content Include="Collections.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -182,6 +183,11 @@
     <Compile Include="Entitites\Product.cs" />
     <Compile Include="Abstractions\Interfaces\IProductRepository.cs" />
     <Compile Include="Abstractions\ProductRepository.cs" />
+    <Compile Include="Examples\IDictionaryExample.cs" />
+    <Compile Include="Examples\DictionaryExample.cs" />
+    <Compile Include="Examples\IListExample.cs" />
+    <Compile Include="Examples\ListExample.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
