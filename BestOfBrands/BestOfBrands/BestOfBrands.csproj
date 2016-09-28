@@ -193,6 +193,8 @@
     <Compile Include="tenta\Deltagare.cs" />
     <Compile Include="tenta\Exercise1.cs" />
     <Compile Include="tenta\Fest.cs" />
+    <Compile Include="tenta\Förfest.cs" />
+    <Compile Include="tenta\Halloweenfest.cs" />
     <Compile Include="tenta\Main.cs" />
   </ItemGroup>
   <ItemGroup>

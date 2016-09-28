@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BestOfBrands.tenta
 {
-    public class Fest
+    public abstract class Fest
     {
         public string Namn { get; set; }
 
@@ -41,5 +41,7 @@ namespace BestOfBrands.tenta
         {
             return Deltagare.Count;
         }
+
+        public abstract double Inträde();
     }
 }
