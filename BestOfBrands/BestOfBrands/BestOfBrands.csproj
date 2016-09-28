@@ -186,9 +186,14 @@
     <Compile Include="Examples\IDictionaryExample.cs" />
     <Compile Include="Examples\DictionaryExample.cs" />
     <Compile Include="Examples\IListExample.cs" />
+    <Compile Include="Examples\LinqExamples.cs" />
     <Compile Include="Examples\ListExample.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tenta\Deltagare.cs" />
+    <Compile Include="tenta\Exercise1.cs" />
+    <Compile Include="tenta\Fest.cs" />
+    <Compile Include="tenta\Main.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\products\" />

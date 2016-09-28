@@ -1,5 +1,16 @@
-﻿@{
+﻿@using System.Activities.Expressions
+@using BestOfBrands.Examples
+@{
     Layout = "Pages/Master.cshtml";
+
+    var evenNumbers = new LinqExamples().EvenNumbers();
+    var sek = new LinqExamples().ConvertToSek();
+}
+
+
+@foreach (var i in sek)
+{
+    <p>@i</p>
 }
 
 <!-- Carousel
