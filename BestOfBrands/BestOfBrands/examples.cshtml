@@ -1,0 +1,46 @@
+﻿@using BestOfBrands.Examples
+
+@{
+    Layout = "Pages/Example.cshtml";
+
+    var average = new LinqExamples().Average();
+    
+    var users = new LinqExamples().GetUserNames();
+    var names = from user in users orderby user.Length select user;
+
+    var namesStartingWithC = from user in users where user.ToLower().Contains("c") select user;
+
+    var evenNumbers = new LinqExamples().EvenNumbers();
+
+    var dollarToSek = new LinqExamples().ConvertToSek();
+}
+
+<div class="example">
+   
+    @foreach (var name in namesStartingWithC)
+    {
+        <h1>@name</h1>
+    }
+
+    @foreach (var name in names)
+    {
+        <h1>@name</h1>
+    }
+
+    <h1>@average</h1>
+
+    @foreach (var user in users)
+    {
+        <h1>@user</h1>
+    }
+
+    @foreach (var number in evenNumbers)
+    {
+        <h1>@number</h1>
+    }
+
+    @foreach (var sek in dollarToSek.OrderByDescending(x => x))
+    {
+        <h1>@sek</h1>
+    }
+</div>

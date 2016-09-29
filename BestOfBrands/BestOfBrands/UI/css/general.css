@@ -2,6 +2,15 @@
     display: block;
 }
 
+h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+div.example {
+    margin-top: 100px;
+}
+
 .numberCircle {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;

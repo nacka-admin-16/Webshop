@@ -151,7 +151,9 @@
     <Content Include="Pages\Admin\ListProducts.cshtml" />
     <Content Include="Pages\Men.cshtml" />
     <Content Include="Pages\Women.cshtml" />
-    <Content Include="Collections.cshtml" />
+    <Content Include="collections.cshtml" />
+    <Content Include="examples.cshtml" />
+    <Content Include="Pages\Example.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -195,7 +197,10 @@
     <Compile Include="tenta\Fest.cs" />
     <Compile Include="tenta\Förfest.cs" />
     <Compile Include="tenta\Halloweenfest.cs" />
+    <Compile Include="tenta\IUserRepository.cs" />
     <Compile Include="tenta\Main.cs" />
+    <Compile Include="tenta\User.cs" />
+    <Compile Include="tenta\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\products\" />
