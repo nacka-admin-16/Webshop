@@ -1,0 +1,16 @@
+﻿@using BestOfBrands.Examples
+
+@{
+    Layout = "/Pages/Example.cshtml";
+
+    var myString = "Jag heter carl";
+    
+    //var words = myString.CountWords();
+    //var words = myString.FirstLetterToUpper();
+
+    var words = myString.ContainsChar("e");
+}
+
+<div>
+    <h1>@words</h1>
+</div>

@@ -1,2 +1,2 @@
-2016-09-22 05:31:09 Could not find file 'C:\Projects\nacka-admin\BestOfBrands\BestOfBrands\BestOfBrands\Database\products.xml'.
-2016-09-22 05:32:14 Could not find file 'C:\Projects\nacka-admin\BestOfBrands\BestOfBrands\BestOfBrands\Database\products.xml'.
+2016-10-04 08:18:12 knas
+2016-10-04 08:18:15 Input string was not in a correct format.
