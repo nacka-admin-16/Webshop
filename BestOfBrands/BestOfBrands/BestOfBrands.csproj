@@ -156,6 +156,7 @@
     <Content Include="Pages\Example.cshtml" />
     <Content Include="Pages\TryCatch.cshtml" />
     <Content Include="Pages\Extensions.cshtml" />
+    <Content Include="Pages\Arv.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -187,6 +188,9 @@
     <Compile Include="Entitites\Product.cs" />
     <Compile Include="Abstractions\Interfaces\IProductRepository.cs" />
     <Compile Include="Abstractions\ProductRepository.cs" />
+    <Compile Include="Examples\CalculateExample.cs" />
+    <Compile Include="tenta\Arv\ArticlePage.cs" />
+    <Compile Include="tenta\Arv\BasePage.cs" />
     <Compile Include="Examples\ExtensionExamples.cs" />
     <Compile Include="Examples\IDictionaryExample.cs" />
     <Compile Include="Examples\DictionaryExample.cs" />
@@ -196,6 +200,7 @@
     <Compile Include="Examples\TryCatch.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tenta\Arv\StartPage.cs" />
     <Compile Include="tenta\Deltagare.cs" />
     <Compile Include="tenta\Exercise1.cs" />
     <Compile Include="tenta\Fest.cs" />

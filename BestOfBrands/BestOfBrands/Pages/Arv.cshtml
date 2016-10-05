@@ -1,0 +1,18 @@
+﻿@using StartPage = BestOfBrands.tenta.Arv.StartPage
+
+@{
+    Layout = "/Pages/Example.cshtml";
+
+    var startPage = new StartPage
+    {
+        GoogleAnalytics = "UA-5510895-1",
+        Rubrik = "Rubrik för startsida",
+        Ingress = "Ingress för startsida"
+    };
+
+}
+
+<h1>@startPage.Rubrik</h1>
+<p>@startPage.Ingress</p>
+<p>@startPage.GoogleAnalytics</p>
+<p>@startPage.SidId</p>

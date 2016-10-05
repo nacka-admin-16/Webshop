@@ -10,16 +10,11 @@ namespace BestOfBrands.Examples
         {
             try
             {
-                return Convert(myString);
+                return int.Parse(myString);
             }
-            catch (Exception exception)
-            {
-                using (StreamWriter streamWriter = new StreamWriter(SiteConstants.PathToExceptionLog(), true))
-                {
-                    streamWriter.WriteLine(DateTime.Now + " " + exception.Message);
-                }
-
-                return -1;                
+            catch (Exception)
+            {                
+                return -1;
             }
         }
 
@@ -36,7 +31,7 @@ namespace BestOfBrands.Examples
                 using (StreamWriter streamWriter = new StreamWriter(SiteConstants.PathToExceptionLog(), true))
                 {
                     streamWriter.WriteLine(DateTime.Now + " knas");
-                }                
+                }
             }
         }
     }
